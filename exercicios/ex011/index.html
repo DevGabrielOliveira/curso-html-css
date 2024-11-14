@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Aumente e diminua o tamanho do sua pagina em seu navegador e veja a mágica acontecer.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img300x300.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/img700x700.png" type="image/png">
+        <img src="imagens/img1000x1000.png" alt="foto tamanho G">
+    </picture>
+
+    <h1>Adicionando Audios</h1>
+    <p>Vamos reproduzir audios em html</p>
+    <audio preload="metadata" controls>
+        <source src="midias/Mirage melody - Patrick Patrikios.mp3" type="audio/mpeg">
+        <source src="midias/Mirage melody - Patrick Patrikios.ogg" type="audio/ogg">
+        <source src="midias/Mirage melody - Patrick Patrikios.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
