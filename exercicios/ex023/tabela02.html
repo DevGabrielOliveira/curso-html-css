@@ -12,6 +12,13 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: darkgrey;
+        }
+
         td, th {
             border: 1px solid black;
         }
@@ -28,8 +35,9 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
 
-    <!--ANATOMIA PARA TABELAS GRANDES[
+    <!--ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPITION
             THEAD
                 TR, TD, TH
             TBODY
@@ -39,10 +47,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th> <!--o scope serve para mostrar ao html a direção que esse titulo se trata-->
             </tr>
         </thead>
         <tbody>
@@ -50,7 +59,23 @@
                 <td>São Paulo</td>
                 <td>45.919.049</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
         </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>210.147.125</strong></td>
+        </tfoot>
     </table>
 </body>
 </html>
