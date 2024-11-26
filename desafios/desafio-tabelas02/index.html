@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas 02</title>
+
+    <style>
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .linha-personalizada {
+            background-color: midnightblue;
+            color: white;
+        }
+
+        .numero {
+            text-align: center;
+        }
+
+        .text-media {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Médias de alunos</h1>
+
+    <table>
+        <tr class="linha-personalizada">
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
+        </tr>
+        <tr class="linha-personalizada">
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th rowspan="4" scope="rowgroup">Exatas</th>
+            <td>Matemática</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr class="linha-personalizada">
+            <th colspan="4" scope="row" class="text-media">Média de Exatas</th>
+            <td class="numero">0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>História</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+            <td class="numero">0</td>
+        </tr>
+        <tr class="linha-personalizada">
+            <th colspan="4" scope="row" class="text-media">Média de Humanas</th>
+            <td class="numero">0</td>
+        </tr>
+    </table>
+</body>
+
+</html>
