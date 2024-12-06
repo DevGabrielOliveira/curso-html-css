@@ -1,0 +1,28 @@
+
+/*DEFINIÇÕES PADRÃO*/
+
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*DEFINIÇÕES DO BODY*/
+
+html, body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
